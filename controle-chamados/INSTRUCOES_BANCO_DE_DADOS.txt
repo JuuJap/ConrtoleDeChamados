@@ -1,0 +1,115 @@
+SISTEMA DE CONTROLE DE CHAMADOS
+
+CONFIGURAÇÃO DO BANCO DE DADOS (XAMPP)
+
+1. INICIAR O XAMPP
+
+* Abra o XAMPP Control Panel.
+* Inicie os serviços:
+
+  * Apache
+  * MySQL
+
+Os dois devem ficar com o status verde.
+
+---
+
+2. ACESSAR O PHPMYADMIN
+
+Abra o navegador e acesse:
+
+http://localhost/phpmyadmin
+
+---
+
+3. CRIAR O BANCO DE DADOS
+
+Clique em "Novo" no menu lateral esquerdo.
+
+Nome do banco:
+
+controle_chamados
+
+Clique em "Criar".
+
+---
+
+4. SELECIONAR O BANCO
+
+Clique no banco:
+
+controle_chamados
+
+No menu superior, clique em:
+
+SQL
+
+---
+
+5. EXECUTAR O SCRIPT SQL
+
+Cole o código abaixo e clique em "Executar":
+
+CREATE TABLE usuarios (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL UNIQUE,
+senha VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE chamados (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome_usuario VARCHAR(100) NOT NULL,
+departamento VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL,
+telefone VARCHAR(20) NOT NULL,
+equipamento VARCHAR(100) NOT NULL,
+numero_equipamento VARCHAR(50) NOT NULL,
+descricao_problema TEXT NOT NULL,
+status ENUM('Aberto', 'Em Andamento', 'Concluído') DEFAULT 'Aberto',
+data_abertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO usuarios (nome, email, senha)
+VALUES (
+'Administrador',
+'[admin@empresa.com](mailto:admin@empresa.com)',
+SHA2('123456',256)
+);
+
+---
+
+6. VERIFICAR AS TABELAS
+
+Após executar o script, deverão existir as tabelas:
+
+* usuarios
+* chamados
+
+---
+
+7. ACESSAR O SISTEMA
+
+Copie a pasta do projeto para:
+
+C:\xampp\htdocs\controle-chamados
+
+Abra o navegador e acesse:
+
+http://localhost/controle-chamados
+
+---
+
+8. LOGIN PADRÃO
+
+E-mail:
+[admin@empresa.com](mailto:admin@empresa.com)
+
+Senha:
+123456
+
+---
+
+OBSERVAÇÃO
+
+Caso o banco de dados já exista, ignore mensagens informando que o banco já foi criado e execute apenas os comandos de criação das tabelas.
