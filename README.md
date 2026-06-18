@@ -1,27 +1,31 @@
-SISTEMA DE CONTROLE DE CHAMADOS PARA SUPORTE DE TI
+# Sistema de Controle de Chamados para Suporte de TI
 
-Autores:
+Projeto acadêmico desenvolvido para auxiliar no registro, acompanhamento e gerenciamento de chamados técnicos relacionados a equipamentos de informática.
+
+---
+
+## Autores
 
 * Julio Aparecido
 * Julio Cesar
 * Matheus Bassi Tomé
 
-Curso: Técnico em Informática
-Disciplina: Desenvolvimento de Sistemas
+**Curso:** Técnico em Informática
+**Disciplina:** Desenvolvimento de Sistemas
 
 ---
 
-DESCRIÇÃO DO PROJETO
+## Sobre o Projeto
 
-O Sistema de Controle de Chamados foi desenvolvido com o objetivo de auxiliar no registro e gerenciamento de ocorrências relacionadas a equipamentos de informática.
+O **Sistema de Controle de Chamados** foi desenvolvido com o objetivo de facilitar o registro e o gerenciamento de ocorrências relacionadas a equipamentos de informática.
 
-Por meio do sistema, os usuários podem registrar chamados contendo informações sobre o equipamento, departamento, contato e descrição do problema encontrado. Além disso, é possível consultar os chamados cadastrados e acompanhar o status de cada solicitação.
+Através do sistema, os usuários podem cadastrar chamados contendo informações sobre o equipamento, departamento, contato e descrição do problema encontrado. Além disso, é possível consultar os chamados registrados, visualizar detalhes e acompanhar o andamento de cada solicitação.
 
-O projeto foi desenvolvido como atividade acadêmica utilizando tecnologias web e banco de dados.
+Este projeto foi desenvolvido como atividade acadêmica utilizando tecnologias web e banco de dados.
 
 ---
 
-FUNCIONALIDADES
+## Funcionalidades
 
 * Login de usuário
 * Cadastro de chamados
@@ -33,33 +37,34 @@ FUNCIONALIDADES
 
 ---
 
-TECNOLOGIAS UTILIZADAS
+## Tecnologias Utilizadas
 
-Front-End:
+### Front-End
 
 * HTML5
 * CSS3
 * Bootstrap 5
 * JavaScript
 
-Back-End:
+### Back-End
 
 * PHP 8
 
-Banco de Dados:
+### Banco de Dados
 
 * MySQL
 
-Servidor Local:
+### Ambiente de Desenvolvimento
 
 * XAMPP
 
 ---
 
-ESTRUTURA DO PROJETO
+## Estrutura do Projeto
 
+```text
 controle-chamados/
-
+│
 ├── config/
 │   └── conexao.php
 │
@@ -75,52 +80,57 @@ controle-chamados/
 │
 ├── index.php
 ├── logout.php
-├── README.txt
+├── README.md
 └── INSTRUCOES_BANCO_DE_DADOS.txt
+```
 
 ---
 
-CONFIGURAÇÃO
+## Configuração
 
 Para configurar o banco de dados e executar o sistema, consulte o arquivo:
 
+```text
 INSTRUCOES_BANCO_DE_DADOS.txt
+```
 
 ---
 
-LOGIN PADRÃO
+## Login Padrão
 
-E-mail:
-[admin@empresa.com](mailto:admin@empresa.com)
-
-Senha:
-123456
-
----
-
-DIVISÃO DAS ATIVIDADES
-
-Julio Aparecido
-
-* Desenvolvimento do Front-End
-* Estrutura das páginas
-* Interface do usuário
-* Integração visual do sistema
-
-Julio Cesar
-
-* Desenvolvimento do Back-End
-* Integração com banco de dados
-* Processamento das informações
-
-Matheus Bassi Tomé
-
-* Documentação do projeto
-* Organização dos relatórios
-* Descrição técnica do sistema
+| Campo  | Valor                                         |
+| ------ | --------------------------------------------- |
+| E-mail | [admin@empresa.com](mailto:admin@empresa.com) |
+| Senha  | 123456                                        |
 
 ---
 
-CONSIDERAÇÕES FINAIS
+## Divisão das Atividades
 
-O projeto permitiu a aplicação prática dos conhecimentos adquiridos durante o curso, envolvendo desenvolvimento web, banco de dados, organização de informações e trabalho em equipe. O sistema atende aos requisitos propostos para o gerenciamento básico de chamados de suporte técnico.
+| Integrante             | Responsabilidades                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| **Julio Aparecido**    | Desenvolvimento do Front-End, estrutura das páginas, interface do usuário e integração visual |
+| **Julio Cesar**        | Desenvolvimento do Back-End, integração com banco de dados e processamento das informações    |
+| **Matheus Bassi Tomé** | Documentação do projeto, organização dos relatórios e descrição técnica do sistema            |
+
+---
+
+## Objetivos de Aprendizagem
+
+Durante o desenvolvimento deste projeto foram aplicados conhecimentos relacionados a:
+
+* Desenvolvimento Web
+* Programação em PHP
+* Integração com Banco de Dados
+* Estruturação de Sistemas
+* Trabalho em Equipe
+* Resolução de Problemas
+* Controle de Sessões e Autenticação
+
+---
+
+## Considerações Finais
+
+Este projeto proporcionou uma experiência prática no desenvolvimento de sistemas web, permitindo aplicar conceitos estudados em sala de aula e compreender melhor a integração entre interface, lógica de negócio e banco de dados.
+
+O sistema atende aos requisitos propostos para o gerenciamento básico de chamados de suporte técnico, oferecendo uma solução simples, funcional e organizada.
